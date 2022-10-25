@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+body {
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(30, 54, 59, 1) 0%,
+    rgba(93, 93, 116, 1) 100%
+  );
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.container {
+  display: flex !important;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* background-color: rgba(94, 34, 34, 0.479); */
+  align-items: center;
+  height: 100vh;
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+}
+.container > form {
+  width: 70%;
+  border: 1px solid #dfdfdf;
+  padding: 20px;
+  border-radius: 5px;
+  background: #fff;
+}
+pre {
+  width: 70%;
+  color: #fff;
+  font-size: larger;
+}
+.field {
+  margin: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+label {
+  color: rgb(0, 0, 0);
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+h1 {
+  text-align: center;
+  margin: 0 0 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  width: 90%;
+  padding: 10px;
+  font-size: 14px;
+}
+input:focus {
+  outline: 0;
+  border-color: rgb(216, 214, 214);
+}
+
+button {
+  /* background: #0563b4 !important; */
+  cursor: pointer;
+  background-color: #3498db;
+  border: 2px solid #3498db;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 90%;
+  margin: auto;
+}
+small {
+  color: red;
+  display: block;
+}
+
+.success {
+  color: #0a0a0a;
+  background-color: #fff;
+  margin: 10px;
+  padding: 10px;
+  font-size: 17px;
+  border-radius: 10px;
+  transition: 300ms ease;
 }
